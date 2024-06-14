@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create a Fruit</title>
+  </head>
+  <body>
+    <h1>Create a New Fruit!</h1>
+    <!--
+        
+        Usage:
+        Create a form, use the "form" tag in HTML. The "action" attribute specifies where to send the data and the "method" attribute specifies the HTTP method to use. Inside the form, use "label" and "input" elements to describe and create interactive fields. There are two types of input fields: text and checkbox. Finally,  add a clickable "button" element to submit the form-data.
+
+        - The form is submitted to the "/fruits" route using the POST method.
+        - The user can enter the name of the fruit in the "Name" input field.
+        - The user can select the color of the fruit using the "Color" input field.
+        - The user can indicate whether the fruit is ready to eat by checking the "Ready to eat" checkbox.
+        - When the user clicks the "Create Fruit" button, the form is submitted.
+
+
+    -->
+    <form action="/fruits" method="POST">
+        <label>Name:</label>
+        <input type="text" name= "name"/> 
+        <label>Color: </label>
+        <label>Ready to eat</label>
+        <input type="checkbox" name= "isReadyToEat"/>
+        <button type="submit">Create Fruit</button>
+    </form>
+  </body>
+</html>
